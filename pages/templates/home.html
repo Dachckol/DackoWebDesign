@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}
+        <title>Home | Dacko Web Design</title>
+{% endblock %}
+
+{% block content %}
+        <div id="pageID" data-page='home'></div>
+        <div class="front">
+            <div class="row">
+                <h1 class="bigTitle centerIt">Dacko Web Design</h1>
+                <h3 class="bigCaption centerIt">Cheap websites for everyone!</h3>
+                <div class="bigButton centerIt">
+                    <a href="/pages/about" class="medium button radius">About Me</a>
+                    <br />
+		    <a href="http://ko-fi.com?i=8d1fb0206dd300f" target="_blank" style=""><img style="border:0px" src="http://ko-fi.com/img/button-4.png" border="0" alt="Buy Me A Coffee :) @ ko-fi.com"></a> 
+		</div>
+            </div>
+            <div class="row">
+                <ul class="small-block-grid-1 medium-block-grid-3" data-equalizer>
+                    <li class="centerIt">
+                        <div class="bigItem" data-equalizer-watch>
+                        <h4>Great Design & Development!</h4>
+                        <p>All designs are responsive and built using powerful and fast frameworks such as <a href="http://foundation.zurb.com/" target="_blank">Foundation</a>.
+                        </p>
+                        <a href="/pages/about" class="small button radius">About</a>
+                        </div>
+                    </li>
+                    <li class="centerIt">
+                        <div class="bigItem" data-equalizer-watch>
+                        <h4>Low Prices!</h4>
+                        <p>A simple 5 page website can be done for free! Add an email contact form and it's still only &pound3. Corrective maintenance is free. Anyone can afford this!</p>
+                        <a href="/pricing" class="small button radius">Pricing</a>
+                        </div>
+                    </li>
+                    <li class="centerIt">
+                        <div class="bigItem" data-equalizer-watch>
+                        <h4>Reliable Advice!</h4>
+                        <p>You will have access to reliable advice throughout the development and deployment of your site. If you want, I can deploy it for you!</p>
+                        <a href="/contact/" class="small button radius">Contact</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+{% endblock %}
+
+{% block after %}
+    <script src="/static/js/foundation/foundation.equalizer.js"></script>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}
+        <title>Portfolio | Dacko Web Design</title>
+{% endblock %}
+
+{% block content %}
+        <div id="pageID" data-page='portfolio'></div>
+        <div class="row">
+            <div class=" small-12 columns">
+                <div class="centerIt">
+                    <h2>Websites created by me</h2>
+                    <p>Please note that even though I provide customers with design related advice, it is still the customer that has the final say about all design details and features.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <ul class="small-block-grid-1 medium-block-grid-2">
+                {% for w in websites%}
+                <li><div class="portfolioItem" style="{{w.style}};" data-url="{{w.url}}">
+                    <h2 style="color: {{w.titleColor}};">{{w.name}}</h2>
+                    <p style="color: {{w.textColor}};">{{w.description}}</p>
+                </div></li>
+                {% endfor %}
+            </ul>
+        </div>
+{% endblock %}
+
+{% block after%}
+        <script>
+            $(document).ready(function () {
+                $(".portfolioItem").click(function (event) {
+                    window.open($(this).data("url"));
+                });
+            });
+        </script>
+{% endblock %}

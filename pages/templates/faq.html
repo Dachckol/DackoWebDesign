@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block title %}
+        <title>FAQ | Dacko Web Design</title>
+{% endblock %}
+
+{% block content %}
+        <div id="pageID" data-page='faq'></div>
+        <div class="row">
+            <h2>Got A Question?</h2>
+            <dl class="accordion" data-accordion>
+                <dd class="accordion-navigation">
+                    <a class="toggle" href="#panel1">How long will the development take?</a>
+                    <div id="panel1" class="content">
+                        <p>This really depends on your website. A simple website like this one would take me about 5 days. That is assuming the customer had already planned out what they want on the website and how the want it to look. Having some ideas about the layout of your website can really speed up the process. Also having already prepared the content for the website will be a lot of help during the development. Saves you from having to write it later when you are anxious to get the site online. I recommend looking at already existing websites and asking yourself "What do I like about this site?". It will help you later on...</p>
+                    </div>
+                </dd>
+                <dd class="accordion-navigation">
+                    <a class="toggle" href="#panel2">Do I really need a CMS on my website?</a>
+                    <div id="panel2" class="content">
+                        <p>This one really depends on how often you plan to change the content of your website. A Content Management System makes updating all the website content fast and easy. A CMS will let you edit your website within seconds. You won't have to worry about that single spelling mistake for more than a few moments. Otherwise you have to ask me to make the change which means that you may have to wait a little (day or two) to see your new content. A CMS will not allow you to edit things like the layout of the website or the colours.</p>
+                    </div>
+                </dd>
+                <dd class="accordion-navigation">
+                    <a class="toggle" href="#panel3">If I don't get a CMS, how long will you take to update my content?</a>
+                    <div id="panel3" class="content">
+                        <p>If you choose to not have a CMS installed, you will have to contact me to make the change for you. I like to give myself 2 days to change the content. That is from the moment I read the request (I check every day). 2 days is just enough for me to ensure that the content is correctly uploaded and fix any errors or issues that might arise from uploading it. More complex modifications will naturally take a little longer.</p>
+                    </div>
+                </dd>
+                <dd class="accordion-navigation">
+                    <a class="toggle" href="#panel4">What's stopping someone else from editing my website?</a>
+                    <div id="panel4" class="content">
+                        <p>To edit the website with a CMS, you will have to log in as an administrator to make any change. As long as you keep the username and password private, no one will be able to edit the website behind your back.</p>
+                        <p>Without a CMS you will have to email me to request a change. Unless you hand out your email login details on the street, you are safe.</p>
+                    </div>
+                </dd>
+                <dd class="accordion-navigation">
+                    <a class="toggle" href="#panel5">What if I want something requiring constant editing like a blog?</a>
+                    <div id="panel5" class="content">
+                        <p>This is where the area gets quite shady... Such features require server-side programming which I tend to charge money for. However there are solutions to such problems. One thing you can do is set up a blog on a blogging platform like <a target="_blank" href='http://www.wordpress.com'>Wordpress</a> and tell me to link to this blog from the menu bar. That way your users will simply click on the "Blog" icon and be redirected to your blog. This is easier and cheaper as most blogging platforms are free (there is always a catch). It will also boost your position in Google. Alternatively, I could write a simple blog however that could result in you having to spend a little money. A blog costs The final choice is up to you.</p>
+                    </div>
+                </dd>
+                <dd class="accordion-navigation">
+                    <a class="toggle" href="#panel6">How can I get high on Google? (How will I get traffic?)</a>
+                    <div id="panel6" class="content">
+                        <p>What you are really asking here is "How will I get traffic?". This is mainly up to you. The main obvious way is to give the address to everyone you know. Ring any bells? <a href="http://www.facebook.com" target="_blank">Facebook</a>? <a href="http://www.twitter.com" target="_blank">Twitter</a>? After that what you can do is submit your website to all the search engines so that they know you exist and list you. I will do this for you for free, if you ask (part of the good customer service). However, it's all really up to your content. This area is called Search Engine Optimisation. Read more about how to do it <a target="_blank" href="http://www.hobo-web.co.uk/seo-tutorial/">here</a>. If you don't want to bother with this, there is the good old "advertising". This basically consists of making people know about your website. Put adverts in the local newspaper. Put the URL address on your business card. Look into <a target="_blank" href="https://www.the-qrcode-generator.com/">QR Codes</a>. There are many ways really.</p>
+                        <p>Finally, since I am generally very proud of my work, I will be putting a link to your website in my portfolio so that others can see how great my websites look. It's something to consider when choosing between me and someone else, but don't rely on this to get you as popular as <a target='_blank' href='http://www.facebook.com'>Facebook</a>.</p>
+                    </div>
+                </dd>
+                <dd class="accordion-navigation">
+                    <a class="toggle" href="#panel7">Should I pay for my host?</a>
+                    <div id="panel7" class="content">
+                        <p>It depends on what you expect from your website. Really the 2 questions you should ask yourself is "How big will the website be?" (how many pages, how much content and how many effects and special features) and "How many people will be vising my page?". This means that the 2 main areas to think about is the speed of the server and the bandwidth. This is a small website with not that many visitors therefore I have it hosted for free at <a href='http://www.heroku.com' target='_blank'>Heroku.com</a>.</p>
+                        <p>There is some more info about this on the <a href="/pricing">Pricing</a> page. Note that your host will need to have support for Django</p>
+                    </div>
+                </dd>
+                <dd class="accordion-navigation">
+                    <a class="toggle" href="#panel8">What happens after I contact you requesting a website?</a>
+                    <div id="panel8" class="content">
+                        <p>The development process starts with me finding out what exactly it is you want. I will ask you about things such as the colour scheme, the style, the font, special features and any specific thing you want. It is wise to give me a list of websites you like and tell me what exactly it is that you like about them. After that I will create a basic template and show it to you. This is the longest part of the development. You will then contact me back telling me what you want changed or tweaked. After that you provide me with the content for the website and I add it. If I told you that the website will cost something, this will be the time to pay. Once you are happy with the design I will accept your payment (if any). After that, your website will be finished.</p>
+                        <p>You can contact me at any time asking for additional services and we will follow the exact same protocol as the one you can see above except regarding the feature you want added or changed. The idea I want to convey here is that I'm flexible with what I do...</p>
+                    </div>
+                </dd>
+                <dd class="accordion-navigation">
+                    <a class="toggle" href="#panel9">Can I get website upgrades?</a>
+                    <div id="panel9" class="content">
+                        <p>Yes. Just because your website is live and I am no longer working on it does not mean that it is finnished. You will likely want some more features, a different layout, even a whole redesign. I am happy to do those for you. </p>
+                        <p>Simple changes will not cost you anything. However more difficult changes such as the addition of a forum may require a payment. It really depends on what you ask for. For each change we will follow the same protocol as with the initial creation of the website (read above).</p>
+                    </div>
+                </dd>
+                <dd class="accordion-navigation">
+                    <a class="toggle" href="#panel10">How do I get started?</a>
+                    <div id="panel10" class="content">
+                        <p>Since this is a flexible service, there is no "Get started" button. To get a website go to the <a href="/contact">Contact</a> page. And fill in the form. Please select "order" from the "Entry Type" dropdown box.</p>
+                        <p>After you do that, all you have to do is wait. I will be emailing you personally within 2 days, probably asking for more details.
+                        </p>
+                    </div>
+                </dd>
+                <dd class="accordion-navigation">
+                    <a class="toggle" href="#panel11">What's in it for you?</a>
+                    <div id="panel11" class="content">
+                        <p>I typed my heart out about this on the <a href="/pricing">Pricing page</a>, but here it is again in a shorter form.</p>
+                        <ul>
+                            <li><h5>Experience</h5>
+                                <p>I'm passionate about web design as it combines art and design with maths and problem solving. By running this service I gain invaluable experience and get to develop a skill which I may use in the future. There is no catch, only passion</p></li>
+                          <li><h5>Exposure</h5>
+                              <p>I put a signature on every website I make, it says "This website was made by <a href="http://dackowebdesign.co.uk">Michal Dacko"</a>. This will get this service more popular. I will benefit from this as it will allow me to monetise this popularity.</p></li>
+                          <li><h5>Money</h5>
+                            <p>If you ask for a more complicated website I will charge you and so make some money for myself.
+                        </ul>
+                    </div>
+                </dd>
+            </dl>
+            <p>If you question hasn't been answered <a href="/contact/" class="tiny button round">Contact Me</a>.</p>
+        </div>
+{% endblock %}
+
+{% block after %}
+        <script src="/static/js/foundation/foundation.accordion.js"></script>
+{% endblock %}

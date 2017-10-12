@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="Description" content="Cheap web design for everyone. Prices starting at £0."/>
+        <link rel="stylesheet" href="/static/css/foundation.min.css" />
+        <link rel="stylesheet" href="/static/css/normalize.css"/>
+        <link rel="stylesheet" href="/static/css/app.css"/>
+        <script src="/static/js/vendor/modernizr.js"></script>
+        <script src="/static/js/vendor/jquery.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-41591835-2', 'auto');
+          ga('require', 'displayfeatures');
+          ga('send', 'pageview');
+
+        </script>
+<script type="text/javascript">
+(function() {
+var hm = document.createElement('script'); hm.type ='text/javascript'; hm.async = true;
+hm.src = ('++u-heatmap-it+log-js').replace(/[+]/g,'/').replace(/-/g,'.');
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(hm, s);
+})();
+</script>
+        {% block title %}
+        {% endblock %}
+    </head>
+    <body>
+            <div data-alert class="alert-box alert" id="JavaScriptAlert">
+                It appears that you don't have JavaScript enabled. Please <a target="_blank" href="http://www.enable-javascript.com/">enable JavaScript</a> or some parts of this site will not function correctly.
+            </div>
+            <script>
+                $(document).ready(function () {
+                    $("#JavaScriptAlert").hide();
+                });
+            </script>
+            <nav class="row centerIt">
+                <div class="title">
+                    <h3>Dacko Web Design</h3>
+                </div>
+                <div class="Nav">
+                    <a class="small button radius" id="homeNav" href="/">Home</a>
+                    <a class="small button radius" id="aboutNav" href="/pages/about">About</a>
+                    <a class="small button radius" id="portfolioNav" href="/portfolio/">Portfolio</a>
+                    <a class="small button radius" id="pricingNav" href="/pricing/">Pricing</a>
+                    <a class="small button radius" id="faqNav" href="/pages/faq">FAQ</a>
+                    <a class="small button radius" id="newsNav" href="/news/">News</a>
+                    <a class="small button radius" id="contactNav" href="/contact/">Contact</a>
+                </div>
+            </nav>
+
+            {% block content %}
+            {% endblock %}
+            <footer class="row backText">
+                <p>Website created and designed by <a href="http://www.dackowebdesign.co.uk" target="_blank">Michal Dacko</a>.</p>
+            </footer>
+        </article>
+        <script src="/static/js/navLoader.js"></script>
+        <script src="/static/js/detailLoader.js"></script>
+        <script src="/static/js/foundation/foundation.js"></script>
+        <script src="/static/js/foundation/foundation.topbar.js"></script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5448120c2d1359c6" async="async"></script>
+        {% block after %}
+        {% endblock %}
+        <script>
+            $(document).foundation();
+        </script>
+    </body>
+</html>

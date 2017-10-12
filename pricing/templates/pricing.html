@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block title %}
+        <title>Pricing | Dacko Web Design</title>
+{% endblock %}
+
+{% block content %}
+        <div id="pageID" data-page='pricing'></div>
+        <div class="row">
+            <div class="small-12 column">
+                <div class="headerHighlight"><h2 class="header">How much will it cost me?</h2></div>
+                <p>The price I might charge you is not the only cost you may be faced with during this venture. Before you decide on getting a website, you should know what costs to expect. There are 3 main areas of a website which can take up money.
+                </p>
+                <a href="#pricing" class="button round">Skip This! Show Me Numbers!</a>
+                <h3>Design, Development and Maintenace</h3>
+                <p>This is the costs of having someone make and maintain the website for you. This is what I do and whether I charge you depends on what you order. Once the website is made, you may want to modify some content. There are 2 options here. You can contact me and I will change the content for you (within a day or two) or I can write a simple Content Management System (CMS) for you. A CMS allows you to log in as an admin and edit the content on your site. Setting up a CMS can be a lot of work, but once set up, it gives you full control over your content. You will still have to contact me if you want to change more complex parts of your website.</p>
+                <h3>Hosting</h3>
+                <p>A host will keep your website on a server so people can see it. Hosting prices can range from 0 to £1000 a month. This choice depends greatly on your website. If you expect a lot of traffic you will want a host that offers unlimited bandwidth and is very reliable. In such case you may consider paying a little for a better server. If however you are an artist and the website is a portfolio that is only seen now and again, then you can probably manage going for a free host. This website is hosted at a host called <a href='http://www.heroku.com' target='_blank'>Heroku</a> and I'm not paying anything for it. As you can see the website is still fast and works perfectly despite the fact that I'm hosting it for free.</p>
+                <p>Different hosts support different kinds of websites. Ask me what are the requirements (usually Django) of your website before looking for a host. Otherwise, the host you find may not support your website.</p>
+                <h3>Domain Name Registration</h3>
+                <p>This step is not required as hosts will provide you with a sub-domain. A sub-domain is a half yours half the hosts domain. For example instead of having your own domain: www.something.com, you will have: www.something.something.com. You may purchase a domain at any time so do not have to worry about it that much. In general domains cost between &pound5 and &pound15 a year with &pound15 being for the popular ones like .com. Domain registration is very simple, you simply only provide the name of your website and what you want the domain to be. I will help you with this up if you ask.</p>
+                <p>This website has a domain, <a href="http://www.dackowebdesign.co.uk">dackowebdesign.co.uk</a>. However if I hadn't purchased this domain, the url would be <a href = "http://dackowebdesign.herokuapp.com">dackowebdesign.herokuapp.com</a> (this still works, only no one uses it)</p>
+                <a class="button round" href="http://www.webhostingsecretrevealed.net/web-hosting-beginner-guide/" target="_blank">Read more about this jargon</a>
+            </div>
+        </div>
+        <hr />
+        <div class="row ">
+            <div class="small-12 columns">
+            <div id="pricing" class="headerHighlight"><h2 class="header">Will it cost?</h2></div>
+            <p>Below is a list of features, most people want and what I'm willing to do them for. Naturally these are just estimates. For example if your website ends up costing &pound0.50, I'm not going to charge you anything. I'm open to negotiations if you feel like you cannot afford this.</p><p>Keep in mind that other areas like hosting and domain names can also take up some money...</p>
+            <ul class="small-block-grid-2 medium-block-grid-4" data-equalizer>
+                {% for p in packages%}
+                <li><ul class="pricing-table" data-equalizer-watch>
+                    <li class="title"><h5>{{p.title}}</h5></li>
+                    <li class="price">{{p.price}}</li>
+                    <li class="description">{{p.description}}</li>
+                </ul></li>
+                {% endfor %}
+            </ul>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="small-12 column">
+                <div class="headerHighlight"><h2 class="header">What's in this for you?</h2></div>
+                <p>By making websites for people I get valuable experience and get to develop this skill which may come more useful later in life. There is no real catch, no trick, I don't want to steal your money or your idea.</p>
+                <p>Apart from experience, I will also get more exposure, here. Every website I create will has a signature at the bottom saying it "was created by Michal Dacko" just like this one does. That way, DackoWebDesign will get more popular and once something on the internet is popular, monetising it is simple. All it takes is a few adverts or a donate button.</p>
+                <p>Additionally I might get a little bit of money if you ask for a more complex website to make. You can estimate how much your website will set you back by looking above.</p>
+            </div>
+        </div>
+                <hr />
+        <div class="row">
+            <div class="small-12 column">
+                <div class="headerHighlight"><h2 class="header">I want a website! Where do we start?</h2></div>
+                <p>To place an order go to the <a href="/contact">contact page</a> and get in touch. Here are some things you may want to include in your order: </p>
+                <ul>
+                    <li>What is the purpose of the website?</li>
+                    <li>What sort of features do you want on it?</li>
+                    <li>What do you do?/What does your business do?</li>
+                    <li>What do you want the website to look like?</li>
+                </ul>
+                <p>Don't worry if you are struggling with this. I will be contacting you back asking for the details anyway.</p>
+            </div>
+        </div>
+{% endblock %}
+
+{% block after%}
+        <script src="/static/js/foundation/foundation.equalizer.js"></script>
+{% endblock %}

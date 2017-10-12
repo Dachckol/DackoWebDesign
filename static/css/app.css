@@ -1,0 +1,138 @@
+@import url(http://fonts.googleapis.com/css?family=Revalia);
+
+body{
+    background-image: url(http://images.ientrymail.com/photoshoppoint/www/tutorials/01/02.jpg);
+    overflow-x: hidden;
+}
+h1, h2,h3,h4,h5,h6{
+    font-family: 'Revalia', cursive;
+    color: white;
+}
+p, li, small, label{
+    color: #DCDCDC;
+}
+
+.panel{
+    background: none !important;
+}
+.panel h1, .panel h2,.panel h3,.panel h4,.panel h5,.panel h6{
+    color: white !important;
+}
+.panel p,.panel li,.panel small,.panel label{
+    color: #DCDCDC;
+}
+.button{
+    background: none !important;
+    border: white solid 1px !important;
+    color: white !important;
+    transition-duration: 0.5s;
+    transition-property: color, border;
+}
+.button:hover{
+    color: #297F27 !important;
+    border: #297F27 solid 1px !important;
+}
+.button.active{
+    color: #297F27 !important;
+    border: #297F27 solid 1px !important;
+}
+.accordion .accordion-navigation, .accordion dd{
+    margin-bottom: 5px !important;
+}
+.accordion-navigation a.toggle{
+    background: none !important;
+    border: white solid 1px;
+    color: white !important;
+    transition-duration: 0.5s;
+    transition-property: color, border;
+}
+.accordion-navigation:hover a.toggle{
+    color: #297F27 !important;
+    border: #297F27 solid 1px;
+}
+.accordion-navigation .content{
+    background: none !important;
+}
+.pricing-table .title{
+    background: none !important;
+}
+.pricing-table .title h5{
+    color: #297F27;
+}
+.pricing-table .price{
+    background: none !important;
+    color: white;
+}
+.pricing-table .description{
+    background: none !important;
+    border:none !important;
+}
+.alert-box.alert, .error{
+    background: none !important;
+    color: #F04124 !important;
+}
+.alert-box.success{
+    background: none !important;
+    color: #00FF1F !important;
+}
+input, textarea, select{
+    background: none !important;
+    color: white !important;
+}
+input:focus, textarea:focus, select:focus{
+    background: none !important;
+    color: white !important;
+    border: #297F27 solid 1px !important;
+}
+option{
+    color: black !important;
+}
+
+
+.mainNav{
+    margin-top: 5px;
+}
+.mainNav a.active{
+    border: #297F27 solid 1px;
+    color: #297F27;
+}
+.bigTitle{
+    font-weight: bolder;
+    font-size: 400%;
+    margin-top: 10%;
+}
+.bigCaption{
+    color: #297F27;
+    margin-bottom: 10%;
+}
+.bigButton{
+    margin-bottom: 10%;
+}
+.bigItem{
+    border-right: #027F00 solid 2px;
+    border-left: #027F00 solid 2px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.portfolioItem{
+    padding: 10px;
+    margin:5px;
+    box-shadow: 0px 0px 5px 1px white;
+    transition-duration: 0.5s;
+    transition-property: box-shadow;
+    border-radius: 3px;
+}
+.portfolioItem:hover{
+    box-shadow: 1px 1px 5px 5px #027F00;
+    cursor: pointer;
+}
+.portfolioItem:active{
+    opacity: 0.5;
+}
+
+.centerIt{
+    text-align: center;
+}
+.backText{
+    color: #ABABAB;
+}

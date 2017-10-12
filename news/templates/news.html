@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+        <title>News | Dacko Web Design</title>
+{% endblock %}
+
+{% block content %}
+        <div id="pageID" data-page='news'></div>
+        <div class="row">
+            <div class=" small-12 columns">
+                <div class="centerIt">
+                    <h2>News</h2>
+                    <p>If there is something you should know about, you'll find it here...</p>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <ul class="small-block-grid-1 medium-block-grid-2 large-block-3" data-equalizer>
+                {% for e in entries%}
+                    <li><div class="panel" data-equalizer-watch>
+                        <h2>{{e.title}}</h2>
+                        <small>{{e.pub_date}}</small>
+                        <p>{{e.text}}</p>
+                    </div></li>
+                {% endfor %}
+            </ul>
+        </div>
+{% endblock %}
+
+{% block after%}
+    <script src="/static/js/foundation/foundation.equalizer.js"></script>
+{% endblock %}
