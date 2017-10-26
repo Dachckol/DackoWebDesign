@@ -1,1 +1,3 @@
+*.pyc
+*.pyo
 dackowebdesign/settings.*
